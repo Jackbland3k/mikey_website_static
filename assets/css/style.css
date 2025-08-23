@@ -98,6 +98,51 @@ footer {
   .hero__text { width: 100%; padding: 0 12px; }
 }
 
+/* Center the menu vertically and horizontally */
+#mobileMenu .offcanvas-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(24px, 6vh, 48px);
+}
+
+/* Limit menu width and center it */
+.mobile-menu {
+  width: min(520px, 86vw);
+  margin: 0 auto;
+}
+
+/* Each link looks like a centered row with dividers */
+.mobile-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #111;                         /* adjust if you use a dark bg */
+  font-weight: 600;
+  letter-spacing: .12em;               /* spaced letters like your example */
+  font-size: clamp(22px, 4.5vw, 28px); /* responsive size */
+  padding: 16px 0;
+  border-top: 1px solid rgba(0,0,0,.35);
+}
+
+.mobile-link:last-child {
+  border-bottom: 1px solid rgba(0,0,0,.35);
+}
+
+/* subtle hover */
+.mobile-link:is(:hover, :focus) {
+  background: rgba(0,0,0,.03);         /* for dark menus use rgba(255,255,255,.06) */
+}
+
+/* keep the close X in the corner */
+#mobileMenu .btn-close {
+  position: absolute;
+  right: 24px;
+  top: 20px;
+}
+
+
+
 
 /* white “card” wrapper you’re using on home */
 .section-card {
