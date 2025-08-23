@@ -214,7 +214,6 @@ footer {
 /* underline bar for the current page */
 .navbar .nav-link {
   position: relative;
-  padding-bottom: .4rem;          /* space for the bar */
 }
 
 .navbar .nav-link.is-active::after {
