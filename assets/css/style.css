@@ -154,3 +154,38 @@ footer {
   margin-left: 20px;
   white-space: nowrap; /* prevents the date from wrapping */
 }
+
+
+
+/*Active page bar styling*/
+
+/* underline bar for the current page */
+.navbar .nav-link {
+  position: relative;
+  padding-bottom: .4rem;          /* space for the bar */
+}
+
+.navbar .nav-link.is-active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;                      /* set to -8px if you want the bar below the text */
+  width: 64px;                    /* bar length */
+  height: 4px;                    /* bar thickness */
+  background: #1a1a1a;            /* bar color */
+  border-radius: 2px;
+}
+
+/* optional: show a faint bar on hover too */
+.navbar .nav-link:hover::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 64px;
+  height: 3px;
+  background: rgba(0,0,0,.2);
+  border-radius: 2px;
+}
