@@ -121,3 +121,24 @@ footer {
   border-radius: 8px;
   display: block;
 }
+
+/*Home Page Icons*/
+.hero__icons { display: flex; gap: 10px; align-items: center; }
+
+.icon-link img {
+  display: block;
+  width: 28px; height: 28px;          /* control size */
+  object-fit: contain;
+  border-radius: 4px;                  /* make round: 50% */
+  transition: transform .15s ease, filter .15s ease;
+}
+
+.icon-link:hover img {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+/* optional: a tad bigger on phones */
+@media (max-width: 768px) {
+  .icon-link img { width: 32px; height: 32px; }
+}
