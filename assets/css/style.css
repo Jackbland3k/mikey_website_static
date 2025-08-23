@@ -27,6 +27,13 @@ footer {
   font-size: 1rem;
 }
 
+/*nav bar spacing for computer*/
+@media (min-width: 992px) {
+  .navbar .navbar-nav { 
+    gap: 2.25rem;   /* tweak: 1.5rem–3rem */
+  }
+}
+
 /* -------- Off-canvas nav -------- */
 .offcanvas-body .nav-link {
   font-size: 1.5rem;
