@@ -222,7 +222,7 @@ footer {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -10;                      /* set to -8px if you want the bar below the text */
+  bottom: -20;                      /* set to -8px if you want the bar below the text */
   width: 64px;                    /* bar length */
   height: 4px;                    /* bar thickness */
   background: #1a1a1a;            /* bar color */
@@ -235,7 +235,7 @@ footer {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -10;
+  bottom: -20;
   width: 64px;
   height: 3px;
   background: rgba(0,0,0,.2);
