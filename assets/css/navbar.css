@@ -1,0 +1,11 @@
+@media (min-width:992px){
+  .navbar .navbar-nav{gap:2.25rem;}
+}
+/* active page bar */
+.navbar .nav-link{position:relative;}
+.navbar .nav-link.is-active::after,
+.navbar .nav-link:hover::after{
+  content:"";position:absolute;left:50%;transform:translateX(-50%);top:-1px;width:64px;border-radius:2px;
+}
+.navbar .nav-link.is-active::after{height:4px;background:#1a1a1a;}
+.navbar .nav-link:hover::after{height:3px;background:rgba(0,0,0,.2);}

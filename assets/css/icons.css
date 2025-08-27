@@ -1,0 +1,4 @@
+.hero__icons{display:flex;gap:10px;align-items:center;}
+.icon-link img{display:block;width:28px;height:28px;object-fit:contain;border-radius:4px;transition:transform .15s, filter .15s;}
+.icon-link:hover img{transform:translateY(-1px);filter:brightness(1.05);}
+@media (max-width:768px){.icon-link img{width:32px;height:32px;}}
